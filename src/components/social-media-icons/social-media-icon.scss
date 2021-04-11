@@ -1,3 +1,17 @@
-.social-media-icon {
+@import '../../styles/tools/variables.scss';
 
+.social-media-icon {
+    background-color: $white-color;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: unset;
+    }
+
+    div > svg {
+        height: 25px;
+        width: 25px;
+    }
 }

@@ -1,3 +1,5 @@
+import './social-media-icon.scss';
+
 import * as React from 'react';
 import { getClassName } from '../../utils/string-utils';
 
