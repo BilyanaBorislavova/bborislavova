@@ -1,0 +1,12 @@
+.home-header {
+    display: flex;
+    justify-content: center;
+    
+    &-img {
+        width: 201px;
+        height: 205px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 6px solid #ddd;
+    }
+}
