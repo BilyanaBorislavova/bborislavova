@@ -1,4 +1,7 @@
+import './home-content.scss';
+
 import * as React from 'react';
+import HomeContactInfo from './home-contact-info';
 
 const HomeContent: React.FC<{}> = () => (
     <article className="home-content">
@@ -14,6 +17,7 @@ const HomeContent: React.FC<{}> = () => (
         <p className="home-content-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse dolor nihil provident totam eum, nemo eius temporibus molestias neque ex earum magnam fugit sunt sed minus assumenda fugiat possimus.
         </p>
+        <HomeContactInfo />
     </article>
 );
 
