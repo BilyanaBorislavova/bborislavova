@@ -1,3 +1,5 @@
+import './navigation.scss';
+
 import * as React from 'react';
 import GenericNavigationCta from '../cta/generic-navigation-cta';
 
@@ -5,27 +7,27 @@ const navData = [
   {
     id: 1,
     text: 'Home',
-    href: '',
+    href: '#home',
   },
   {
     id: 2,
     text: 'Resume',
-    href: '',
+    href: '#resume',
   },
   {
     id: 3,
     text: 'Skills',
-    href: '',
+    href: '#skills',
   },
   {
     id: 4,
     text: 'Portfolio',
-    href: '',
+    href: '#portfolio',
   },
   {
     id: 5,
     text: 'Contact',
-    href: '',
+    href: '#contact',
   },
 ];
 
@@ -34,7 +36,10 @@ const Navigation: React.FC<{}> = () => (
       <ul className="navigation-list">
           {
             navData.map(({ id, text, href }) => (
-              <li key={id}>
+              <li
+                key={id}
+                className="navigation-list-item"
+              >
                 <GenericNavigationCta
                   text={text}
                   href={href}
