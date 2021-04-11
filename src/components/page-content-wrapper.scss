@@ -1,12 +1,16 @@
 .page-content-wrapper {
     position: relative;
     max-width: 500px;
-    height: 570px;
+    padding: 45px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
     &:before {
         content: '';
         position: absolute;
-        background: url(../assets/images/page-content-background.jpg);
+        background: url('http://wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-btn.png');
         width: 100%;
         height: 100%;
         z-index: -1;
