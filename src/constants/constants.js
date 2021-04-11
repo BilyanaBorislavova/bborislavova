@@ -1,9 +1,9 @@
 const URLs = {
     home: '/home',
-    resume: '/home#resume',
-    skills: '/home#skills',
-    portfolio: '/home#portfolio',
-    contact: '/home#contact',
+    resume: '/resume',
+    skills: '/skills',
+    portfolio: '/portfolio',
+    contact: '/contact',
 };
 
 export { URLs };
