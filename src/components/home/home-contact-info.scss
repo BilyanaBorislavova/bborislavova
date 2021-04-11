@@ -1,0 +1,23 @@
+@import '../../styles/tools/variables.scss';
+
+.home-contact-info {
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    padding: 8px;
+    margin: 12px;
+    border-radius: 8px;
+    background: url('http://wp1.themexlab.com/wp/cards/wp-content/themes/cards/img/bg-btn.png') $primary-color;
+    color: $white-color;
+
+    &-email {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '/';
+            right: -12px;
+        }
+    }
+}
