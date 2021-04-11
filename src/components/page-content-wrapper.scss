@@ -1,0 +1,14 @@
+.page-content-wrapper {
+    position: relative;
+    max-width: 500px;
+    height: 570px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background: url(../assets/images/page-content-background.jpg);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
