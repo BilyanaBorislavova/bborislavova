@@ -1,0 +1,14 @@
+.generic-navigation-cta {
+    background-color: #08aeac;
+    color: #ffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.3s linear;
+
+    &:hover {
+        background-color: #021533;
+        padding-left: 15px;
+    }
+}
