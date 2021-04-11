@@ -6,9 +6,10 @@ import { getClassName } from '../utils/string-utils';
 interface PageContentWrapperProps {
     children: React.ReactNode,
     className?: string,
+    title?: string,
 };
 
-const PageContentWrapper: React.FC<PageContentWrapperProps> = ({ children, className = '' }) => {
+const PageContentWrapper: React.FC<PageContentWrapperProps> = ({ children, title = '', className = '' }) => {
     const combinedClassName = getClassName({
         'page-content-wrapper': true,
         [className]: !!className.length,
@@ -16,6 +17,13 @@ const PageContentWrapper: React.FC<PageContentWrapperProps> = ({ children, class
 
     return (
         <section className={combinedClassName}>
+            {
+                title && (
+                    <h2 className="page-content-wrapper-title">
+                        {title}
+                    </h2>
+                )
+            }
             {children}
         </section>
     );
