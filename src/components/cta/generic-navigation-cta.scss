@@ -1,4 +1,5 @@
 .generic-navigation-cta {
+    display: flex;
     background-color: #08aeac;
     color: #ffff;
     font-size: 12px;
@@ -7,6 +8,8 @@
     padding: 10px;
     transition: background-color 0.3s linear;
 
+    &:active,
+    &:focus,
     &:hover {
         background-color: #021533;
         padding-left: 15px;
