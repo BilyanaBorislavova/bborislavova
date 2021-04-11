@@ -1,7 +1,9 @@
 .navigation {
-    max-width: 165px;
+    min-width: 165px;
 
     &-list {
+        margin: 0;
+        padding: 0;
         display: grid;
         row-gap: 6px;
     }
