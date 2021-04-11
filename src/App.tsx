@@ -1,7 +1,7 @@
 import './styles/styles.scss';
 
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import * as React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Navigation from './components/navigation/navigation';
 import Home from './components/home/home';
@@ -12,7 +12,6 @@ const { home, resume, portfolio, skills, contact } = URLs;
 const App = () => (
   <main className="page-content">
     <Navigation />
-    <BrowserRouter>
       <Switch>
         <Route path={home} component={Home} />
         <Route path={resume} component={Home} />
@@ -20,7 +19,6 @@ const App = () => (
         <Route path={portfolio} component={Home} />
         <Route path={contact} component={Home} />
       </Switch>
-    </BrowserRouter>
   </main>
 );
 
