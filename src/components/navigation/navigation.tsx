@@ -2,32 +2,35 @@ import './navigation.scss';
 
 import * as React from 'react';
 import GenericNavigationCta from '../cta/generic-navigation-cta';
+import { URLs } from '../../constants/constants';
+
+const { home, resume, portfolio, skills, contact } = URLs;
 
 const navData = [
   {
     id: 1,
     text: 'Home',
-    href: '#home',
+    href: home,
   },
   {
     id: 2,
     text: 'Resume',
-    href: '#resume',
+    href: resume,
   },
   {
     id: 3,
     text: 'Skills',
-    href: '#skills',
+    href: skills,
   },
   {
     id: 4,
     text: 'Portfolio',
-    href: '#portfolio',
+    href: portfolio,
   },
   {
     id: 5,
     text: 'Contact',
-    href: '#contact',
+    href: contact,
   },
 ];
 
