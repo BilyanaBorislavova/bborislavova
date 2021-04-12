@@ -10,7 +10,7 @@ interface ProgressBarProps {
     numberToIncrementTo: number,
     timeoutInMs?: number,
     strokeColor?: string,
-    strokeWidth?: string,
+    strokeWidth?: number,
     shouldShowPercentage?: boolean,
     className?: string,
 }
@@ -19,7 +19,7 @@ const NUMBER_TO_INCREMENT_WITH = 1;
 const TIMEOUT_IN_MS = 75;
 const MAX_NUMBER_TO_INCREMENT_TO = 100;
 const DEFAULT_STROKE_COLOR = '#19f6e8';
-const DEFAULT_STROKE_WIDTH = '1';
+const DEFAULT_STROKE_WIDTH = 1;
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
     children,
