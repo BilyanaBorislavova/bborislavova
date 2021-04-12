@@ -1,11 +1,11 @@
 .resume {
     &-work,
-    .page-content-wrapper-title {
-        align-self: stretch;
+    &-education {
+        display: grid;
+        row-gap: 24px;
     }
 
     &-work {
-        display: grid;
-        row-gap: 24px;
+        margin-bottom: 24px;
     }
 }

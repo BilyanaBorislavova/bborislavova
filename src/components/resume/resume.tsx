@@ -2,8 +2,8 @@ import './resume.scss';
 
 import * as React from 'react';
 import PageContentWrapper from '../page-content-wrapper';
-import ResumeEducation from './resume-education';
 import ResumeWork from './resume-work';
+import ResumeEducation from './resume-education';
 
 const Resume: React.FC<{}> = () => (
     <PageContentWrapper
@@ -11,6 +11,7 @@ const Resume: React.FC<{}> = () => (
       title="Resume"
     >
         <ResumeWork />
+        <ResumeEducation />
     </PageContentWrapper>
 );
 
