@@ -1,3 +1,5 @@
+import './resume.scss';
+
 import * as React from 'react';
 import PageContentWrapper from '../page-content-wrapper';
 import ResumeEducation from './resume-education';
