@@ -1,4 +1,4 @@
-import './resume-sub-title.scss';
+import './resume-title-with-icon.scss';
 
 import * as React from 'react';
 
@@ -7,11 +7,11 @@ interface ResumeSubTitleProps {
     icon: React.ReactNode,
 };
 
-const ResumeSubTitle: React.FC<ResumeSubTitleProps> = ({ title, icon }) => (
-    <h3 className="resume-sub-title">
+const ResumeTitleWithIcon: React.FC<ResumeSubTitleProps> = ({ title, icon }) => (
+    <h3 className="resume-title-with-icon">
         {icon}
         {title}
     </h3>
 );
 
-export default ResumeSubTitle;
+export default ResumeTitleWithIcon;
