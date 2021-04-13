@@ -1,0 +1,7 @@
+.title-with-icon {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content;
+    column-gap: 8px;
+    align-items: center;
+}
