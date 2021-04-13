@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { GraduationHatIcon } from '../icons/icons';
-import ResumeTitleWithIcon from './resume-sub-title';
+import ResumeTitleWithIcon from './resume-title-with-icon';
 import ResumeCard from './resume-card';
 
 const ResumeEducation: React.FC<{}> = () => (
