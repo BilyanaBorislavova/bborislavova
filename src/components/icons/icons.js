@@ -7,6 +7,8 @@ import githubLogo from '../../assets/icons/github.svg';
 import linkedinLogo from '../../assets/icons/linkedin.svg'
 import graduationHatIcon from '../../assets/icons/graduation-hat.svg';
 import suitcaseIcon from '../../assets/icons/suitcase.svg';
+import codingIcon from '../../assets/icons/coding.svg';
+import languagesIcon from '../../assets/icons/languages.svg';
 
 const createIcon = src => props => <SvgIcon src={src} {...props} />;
 
@@ -16,6 +18,8 @@ const GithubLogo = createIcon(githubLogo);
 const LinkedinLogo = createIcon(linkedinLogo);
 const GraduationHatIcon = createIcon(graduationHatIcon);
 const SuitcaseIcon = createIcon(suitcaseIcon);
+const CodingIcon = createIcon(codingIcon);
+const LanguagesIcon = createIcon(languagesIcon);
 
 export {
     InstagramLogo,
@@ -24,4 +28,6 @@ export {
     LinkedinLogo,
     GraduationHatIcon,
     SuitcaseIcon,
+    CodingIcon,
+    LanguagesIcon,
 };
