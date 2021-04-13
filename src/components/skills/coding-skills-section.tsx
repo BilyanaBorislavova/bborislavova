@@ -14,6 +14,22 @@ const CodingSkillsSection: React.FC<{}> = () => (
               text="JavaScript"
               numberToIncrementTo={70}
             />
+            <SkillWithText
+              text="React"
+              numberToIncrementTo={70}
+            />
+            <SkillWithText
+              text="HTML / CSS"
+              numberToIncrementTo={70}
+            />
+            <SkillWithText
+              text="SASS / SCSS"
+              numberToIncrementTo={70}
+            />
+            <SkillWithText
+              text="jQuery"
+              numberToIncrementTo={70}
+            />
         </article>
     </SkillsSection>
 );
