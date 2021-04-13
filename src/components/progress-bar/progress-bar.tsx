@@ -1,3 +1,5 @@
+import './progress-bar.scss';
+
 import * as React from 'react';
 import { Line } from 'rc-progress';
 import { increaseNumber } from '../../utils/func-utils';
@@ -8,6 +10,7 @@ const TIMEOUT_IN_MS = 75;
 const MAX_NUMBER_TO_INCREMENT_TO = 100;
 const DEFAULT_STROKE_COLOR = '#19f6e8';
 const DEFAULT_STROKE_WIDTH = 7;
+const DEFAULT_TRAIL_WITH = 7;
 
 interface ProgressBarProps {
     children: React.ReactNode,
@@ -15,6 +18,7 @@ interface ProgressBarProps {
     timeoutInMs?: number,
     strokeColor?: string,
     strokeWidth?: number,
+    trailWidth?: number,
     shouldShowPercentage?: boolean,
     className?: string,
 }
@@ -25,6 +29,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     timeoutInMs = TIMEOUT_IN_MS,
     strokeColor = DEFAULT_STROKE_COLOR,
     strokeWidth = DEFAULT_STROKE_WIDTH,
+    trailWidth = DEFAULT_TRAIL_WITH,
     shouldShowPercentage,
     className = '',
 }) => {
@@ -50,14 +55,14 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     }, [ percent, maxNumberToIncrementTo, timeoutInMs ]);
 
     const percentageText = (
-        shouldShowPercentage && <p className="progress-bar-content">
+        shouldShowPercentage && <p className="progress-bar-content-percentage">
             {`${percent}%`}
         </p>
     );
 
     return (
         <section className={combinedClassName}>
-            <article className="progress-bar-content-wrapper">
+            <article className="progress-bar-content">
                 {children}
                 {percentageText}
             </article>
@@ -65,7 +70,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
               percent={percent}
               strokeColor={strokeColor}
               strokeWidth={strokeWidth}
-              trailWidth={strokeWidth}
+              trailWidth={trailWidth}
             />
         </section>
     );

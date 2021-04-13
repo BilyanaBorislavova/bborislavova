@@ -1,0 +1,7 @@
+.progress-bar {
+    &-content {
+        display: grid;
+        grid-template-columns: max-content min-content;
+        column-gap: 18px;
+    }
+}
