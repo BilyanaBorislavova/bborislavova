@@ -4,16 +4,14 @@ import ProgressBar from '../progress-bar/progress-bar';
 interface SkillWithTextProps {
     text: string,
     numberToIncrementTo: number,
+    props?: any,
 }
 
-const SkillWithText: React.FC<SkillWithTextProps> = ({ text, numberToIncrementTo }) => (
+const SkillWithText: React.FC<SkillWithTextProps> = ({ text, numberToIncrementTo, ...props }) => (
     <ProgressBar
       className="skill-with-text"
-      strokeColor='#313131'
-      strokeWidth={3}
       numberToIncrementTo={numberToIncrementTo}
-      timeoutInMs={15}
-      shouldShowPercentage={false}
+      {...props}
     >
         {text}
     </ProgressBar>
