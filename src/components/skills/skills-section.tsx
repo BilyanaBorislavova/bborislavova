@@ -1,3 +1,5 @@
+import './skills-section.scss';
+
 import * as React from 'react';
 import { getClassName } from '../../utils/string-utils';
 import SkillsTitleWithIcon from './skills-title-with-icon';

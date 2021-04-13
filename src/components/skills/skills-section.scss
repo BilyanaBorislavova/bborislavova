@@ -1,0 +1,9 @@
+.skills-section {
+    width: 100%;
+
+    &,
+    .skill-with-text {
+        display: grid;
+        row-gap: 8px;
+    }
+}
