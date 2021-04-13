@@ -1,4 +1,4 @@
-# Portfolio implemented with Create React App and TypeScript
+# Portfolio with React and TypeScript
 
 In the project directory, you can run:
 
