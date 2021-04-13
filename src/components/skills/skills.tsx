@@ -4,7 +4,10 @@ import CodingSkillsSection from './coding-skills-section';
 import LanguagesSkillsSection from './languages-skills-section';
 
 const Skills: React.FC<{}> = () => (
-    <PageContentWrapper title="Skills">
+    <PageContentWrapper
+      title="Skills"
+      className="skills"
+    >
         <CodingSkillsSection />
         <LanguagesSkillsSection />
     </PageContentWrapper>

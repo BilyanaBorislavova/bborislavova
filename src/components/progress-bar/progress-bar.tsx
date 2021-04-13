@@ -8,9 +8,9 @@ import { getClassName } from '../../utils/string-utils';
 const NUMBER_TO_INCREMENT_WITH = 1;
 const TIMEOUT_IN_MS = 75;
 const MAX_NUMBER_TO_INCREMENT_TO = 100;
-const DEFAULT_STROKE_COLOR = '#19f6e8';
-const DEFAULT_STROKE_WIDTH = 7;
-const DEFAULT_TRAIL_WITH = 7;
+const DEFAULT_STROKE_COLOR = '#00c7fe';
+const DEFAULT_STROKE_WIDTH = 3;
+const DEFAULT_TRAIL_WITH = 3;
 
 interface ProgressBarProps {
     children: React.ReactNode,
