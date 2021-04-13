@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SuitcaseIcon } from '../icons/icons';
 import ResumeCard from './resume-card';
-import ResumeTitleWithIcon from './resume-sub-title';
+import ResumeTitleWithIcon from './resume-title-with-icon';
 
 const ResumeWork: React.FC<{}> = () => (
     <section className="resume-work">
