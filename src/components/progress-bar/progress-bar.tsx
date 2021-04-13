@@ -7,7 +7,7 @@ const NUMBER_TO_INCREMENT_WITH = 1;
 const TIMEOUT_IN_MS = 75;
 const MAX_NUMBER_TO_INCREMENT_TO = 100;
 const DEFAULT_STROKE_COLOR = '#19f6e8';
-const DEFAULT_STROKE_WIDTH = 1;
+const DEFAULT_STROKE_WIDTH = 7;
 
 interface ProgressBarProps {
     children: React.ReactNode,
@@ -50,14 +50,14 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     }, [ percent, maxNumberToIncrementTo, timeoutInMs ]);
 
     const percentageText = (
-        shouldShowPercentage && <p className="animated-progress-bar-content">
+        shouldShowPercentage && <p className="progress-bar-content">
             {`${percent}%`}
         </p>
     );
 
     return (
         <section className={combinedClassName}>
-            <article className="animated-progress-bar-content-wrapper">
+            <article className="progress-bar-content-wrapper">
                 {children}
                 {percentageText}
             </article>

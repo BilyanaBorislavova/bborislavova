@@ -11,6 +11,8 @@ const SkillWithText: React.FC<SkillWithTextProps> = ({ text, numberToIncrementTo
     <ProgressBar
       className="skill-with-text"
       numberToIncrementTo={numberToIncrementTo}
+      timeoutInMs={15}
+      shouldShowPercentage
       {...props}
     >
         {text}
