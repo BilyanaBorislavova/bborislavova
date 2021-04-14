@@ -1,3 +1,5 @@
+import './portfolio.scss';
+
 import softUniLogo from '../../assets/images/portfolio-logos/softuni-logo.jpg';
 import softwareUniversityLogo from '../../assets/images/portfolio-logos/software-university-logo.jpg';
 import softUniCreativeLogo from '../../assets/images/portfolio-logos/softuni-creative-logo.jpg';
