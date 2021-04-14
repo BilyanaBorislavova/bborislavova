@@ -1,0 +1,43 @@
+@import '../../styles/tools/mixins.scss';
+@import '../../styles/tools/variables.scss';
+
+.portfolio-card {
+    display: flex;
+    flex-flow: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    width: 275px;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &-image {
+        height: 144px;
+        object-fit: contain;
+        background-color: $white-color;
+    }
+
+    &-content {
+        padding: 8px 10px;
+        background-color: $white-color;
+
+        &-title {
+            @include text-overflow-elipsis(2, vertical);
+            color: $primary-color;
+            text-overflow: ellipsis;
+        }
+
+        &-description {
+            @include text-overflow-elipsis(3, vertical);
+            color: $secondary-color;
+            word-wrap: break-word;
+        }
+    }
+}
