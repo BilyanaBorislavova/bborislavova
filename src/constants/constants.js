@@ -3,7 +3,6 @@ const URLs = {
     resume: '/resume',
     skills: '/skills',
     portfolio: '/portfolio',
-    contact: '/contact',
 };
 
 export { URLs };

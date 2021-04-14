@@ -4,7 +4,7 @@ import * as React from 'react';
 import GenericNavigationCta from '../cta/generic-navigation-cta';
 import { URLs } from '../../constants/constants';
 
-const { home, resume, portfolio, skills, contact } = URLs;
+const { home, resume, portfolio, skills } = URLs;
 
 const navData = [
   {
@@ -27,11 +27,6 @@ const navData = [
     text: 'Portfolio',
     href: portfolio,
   },
-  {
-    id: 5,
-    text: 'Contact',
-    href: contact,
-  },
 ];
 
 const Navigation: React.FC<{}> = () => (
@@ -47,7 +42,8 @@ const Navigation: React.FC<{}> = () => (
                   text={text}
                   href={href}
                 />
-              </li>)
+              </li>
+              )
             )
           }
       </ul>
