@@ -1,8 +1,20 @@
 .page-content {
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     align-items: center;
     column-gap: 35px;
     height: 100vh;
+    z-index: 9999;
+}
+
+.app {
+    &-dark-theme {
+        background: lightgray;
+    }
+
+    &-white-theme {
+        background: honeydew;
+    }
 }

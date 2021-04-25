@@ -21,8 +21,9 @@ const App = () => {
   const { theme } = React.useContext(ThemeContext);
   
   const combinedClassName = getClassName({
-    'dark-theme': theme === DARK,
-    'light-theme': theme === LIGHT,
+    'app': true,
+    'app-dark-theme': theme === DARK,
+    'app-light-theme': theme === LIGHT,
   });
 
   return (
