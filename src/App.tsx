@@ -3,21 +3,23 @@ import './styles/styles.scss';
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import { URLs } from './constants/constants';
 import Navigation from './components/navigation/navigation';
 import Home from './components/home/home';
-import { URLs } from './constants/constants';
+import Resume from './components/resume/resume';
+import Skills from './components/skills/skills';
+import Portfolio from './components/portfolio/portfolio';
 
-const { home, resume, portfolio, skills, contact } = URLs;
+const { home, resume, portfolio, skills } = URLs;
 
 const App = () => (
   <main className="page-content">
     <Navigation />
+    <Home />
       <Switch>
-        <Route path={home} component={Home} />
-        <Route path={resume} component={Home} />
-        <Route path={skills} component={Home} />
-        <Route path={portfolio} component={Home} />
-        <Route path={contact} component={Home} />
+        <Route path={resume} component={Resume} />
+        <Route path={skills} component={Skills} />
+        <Route path={portfolio} component={Portfolio} />
       </Switch>
   </main>
 );
