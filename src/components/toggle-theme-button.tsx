@@ -1,3 +1,5 @@
+import './toggle-theme-button.scss';
+
 import * as React from 'react';
 import ThemeContext from '../context/theme-context';
 import { DEFAULT_THEMES } from '../providers/theme-provider';
@@ -22,9 +24,9 @@ const ToggleThemeButton: React.FC = () => {
           className={customClassName}
           onClick={toggleTheme}
         >
-            123
+           
         </button>
-    )
+    );
 };
 
 export default ToggleThemeButton;
