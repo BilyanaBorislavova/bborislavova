@@ -9,7 +9,7 @@ const DEFAULT_THEMES = {
 const { LIGHT, DARK } = DEFAULT_THEMES;
 
 const ThemeProvider: React.FC = ({ children }) => {
-    const [ theme, setTheme ] = React.useState(LIGHT);
+    const [ theme, setTheme ] = React.useState(localStorage.getItem('theme') || '');
 
     const toggleTheme = () => {
         if (theme === LIGHT) {
@@ -18,6 +18,10 @@ const ThemeProvider: React.FC = ({ children }) => {
             setTheme(LIGHT);
         }
     };
+
+    React.useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [ theme ]);
 
     const themeContextValue = { theme, toggleTheme };
 
