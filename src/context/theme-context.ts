@@ -1,5 +1,9 @@
 import { createContext } from 'react';
-import { ThemeContextTypes } from '../types/theme-context-types';
+
+type ThemeContextTypes = {
+    theme: string,
+    toggleTheme: () => void,
+};
 
 const themeContextDefaultValues: ThemeContextTypes = {
     theme: '',
